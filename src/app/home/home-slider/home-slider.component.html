@@ -1,0 +1,102 @@
+<div class="row" *ngIf="choice=='primary'">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+        <!-- <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+            [showNavigationIndicators]="showNavigationIndicators">
+            <ng-template ngbSlide *ngFor="let image of images">
+                <div class="picsum-img-wrapper">
+                    <img [src]="image" alt="Random slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>No mouse navigation</h3>
+                    <p>This carousel hides navigation arrows and indicators.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel> -->
+        <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true" [interval]="2000"
+            [keyboard]="true" [pauseOnHover]="true" [wrap]="true" [activeId]="'slideTwo'" class="carousel">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/p1.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/p2.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/p3.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>
+<div class="row" *ngIf="choice=='secondary'">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+        <!-- <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+            [showNavigationIndicators]="showNavigationIndicators">
+            <ng-template ngbSlide *ngFor="let image of images">
+                <div class="picsum-img-wrapper">
+                    <img [src]="image" alt="Random slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>No mouse navigation</h3>
+                    <p>This carousel hides navigation arrows and indicators.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel> -->
+        <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true" [interval]="2000"
+            [keyboard]="true" [pauseOnHover]="true" [wrap]="true" [activeId]="'slideTwo'" class="carousel">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/h1.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/h2.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/h3.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>
+<div class="row" *ngIf="choice=='balshala'">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+        <!-- <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+            [showNavigationIndicators]="showNavigationIndicators">
+            <ng-template ngbSlide *ngFor="let image of images">
+                <div class="picsum-img-wrapper">
+                    <img [src]="image" alt="Random slide">
+                </div>
+                <div class="carousel-caption">
+                    <h3>No mouse navigation</h3>
+                    <p>This carousel hides navigation arrows and indicators.</p>
+                </div>
+            </ng-template>
+        </ngb-carousel> -->
+        <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true" [interval]="2000"
+            [keyboard]="true" [pauseOnHover]="true" [wrap]="true" [activeId]="'slideTwo'" class="carousel">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/b1.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/p2.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="./assets/images/cems/slider/p3.jpg" alt="Random first slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>

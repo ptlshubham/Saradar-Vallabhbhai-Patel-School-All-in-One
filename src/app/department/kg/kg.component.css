@@ -1,0 +1,10 @@
+.social-links{
+    color: #fff !important;
+    font-size: 12px;
+}
+.rs-team.style1 .team-item .content-part .social-links li {
+    display: inherit;
+}
+.rs-team.style1 .team-item .content-part .name a:hover {
+    color: #fff;
+}
