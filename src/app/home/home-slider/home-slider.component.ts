@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HomeService } from 'src/app/core/services/home.services';
 
 @Component({
   selector: 'app-home-slider',
@@ -8,20 +9,27 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeSliderComponent implements OnInit {
 
-  choice: any;
-  showDiv: any;
+  imagesData: any = [];
+  sliderImages: any = [];
+
   constructor(
-    private router:Router,
-    private activatedRoute: ActivatedRoute
-  ) { 
-    this.choice = localStorage.getItem('choice');
-  
-  }
+    private homeService: HomeService
+  ) { }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params => {
-      this.showDiv = params['id'];
-    });
+    this.getImagesDataById();
+  }
+
+  getImagesDataById() {
+    this.sliderImages = [];
+    this.homeService.getBannersImagesById(localStorage.getItem('InstituteId')).subscribe((res: any) => {
+      this.imagesData = res;
+      this.imagesData.forEach((element: any) => {
+        if (element.purpose == 'slider') {
+          this.sliderImages.push(element);
+        }
+      });
+    })
   }
 
 }

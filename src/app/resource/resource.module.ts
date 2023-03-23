@@ -29,6 +29,7 @@ import { ProjectComponent } from './project/project.component';
     SharedModule,
     RouterModule.forChild(ResourceRoutes),
     NgbModule,
+
   ]
 })
 export class ResourceModule { }
