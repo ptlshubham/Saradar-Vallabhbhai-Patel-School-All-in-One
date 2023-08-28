@@ -6,12 +6,16 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { DepartmentRoutes } from './department.routing';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { StaffDetailsComponent } from './staff-details/staff-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 
 @NgModule({
   declarations: [
-    KGComponent
+    KGComponent,
+    StaffDetailsComponent,
+    StudentDetailsComponent
   ],
   imports: [
     CommonModule,
